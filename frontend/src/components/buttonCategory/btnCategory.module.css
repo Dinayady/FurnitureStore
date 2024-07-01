@@ -1,0 +1,18 @@
+.button {
+  padding: 10px 40px;
+  border-radius: 30px;
+  background-color: var(--second-background-btn-color);
+  border: 2px solid var(--main-background-btn-color);
+  color: var(--main-link-color);
+  transition: all 0.1s ease-in;
+}
+
+.button:hover {
+  color: var(--hover-link-color);
+  background-color: var(--second-hover-background-btn-color);
+  border: 2px solid var(--second-hover-background-btn-color);
+}
+
+.active {
+  background-color: var(--main-background-btn-color);
+}

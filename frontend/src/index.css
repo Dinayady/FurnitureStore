@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sahitya:wght@400;700&display=swap');
+
+:root {
+  /*Colors*/
+  --main-text-color: #d4bab4;
+  --second-text-color: #504642;
+  --accent-text-color: #ffae6b;
+  --price-text-color: #679766;
+
+  --main-link-color: #8f7f7d;
+  --hover-link-color: #ead6d2;
+
+  --icon-color: #c97461;
+
+  --main-input-color: #a08f8c;
+  --second-input-color: #e2c8c2;
+
+  --main-background-color: #322623;
+  --second-background-color: #504642;
+  --third-background-color: #181514;
+
+  --main-background-cards-color: #f2e4df;
+
+  --main-background-btn-color: #d4bab4;
+  --main-hover-background-btn-color: #cbaaa2;
+  --second-background-btn-color: #3b3532;
+  --second-hover-background-btn-color: #302a28;
+
+  /* Fonts */
+  --main-font: 'Sawarabi Mincho', serif;
+  --accent-font: 'Sahitya', serif;
+
+  /* Fonts size */
+  --main-size: 24px;
+  --large-size: 50px;
+  --medium-size: 34px;
+  --small-size: 20px;
+
+  /* Fonts weight */
+  --main-weight: 400;
+  --large-weight: 700;
+  --medium-weight: 500;
+  --small-weight: 300;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--main-text-color);
+  font-family: var(--main-font);
+  font-size: var(--main-size);
+  line-height: 1.1;
+  background-color: var(--main-background-color);
+}
+
+h1 {
+  color: var(--main-text-color);
+  font-family: var(--accent-font);
+  font-size: var(--large-size);
+  font-weight: var(--large-weight);
+}
+
+h2 {
+  color: var(--main-text-color);
+  font-family: var(--accent-font);
+  font-size: var(--medium-size);
+  font-weight: var(--medium-weight);
+}
+
+.container {
+  margin: 0 auto;
+  width: 1110px;
+  margin-top: 20px;
+}
+
+a,
+a:active,
+a:hover {
+  text-decoration: none;
+  color: var(--main-link-color);
+}
+
+a:hover {
+  color: var(--hover-link-color);
+}
+
+::-webkit-input-placeholder {
+  color: var(--main-input-color);
+}
+
+ul li {
+  list-style: none;
+}
+
+input {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
