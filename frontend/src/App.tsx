@@ -4,9 +4,9 @@ import ReactDOM from 'react-dom/client';
 
 import { Paths } from './paths';
 import { Main } from './pages/main/Main';
+import { Catalog } from './pages/catalog/Catalog';
 
 import './index.css';
-import { Catalog } from './pages/catalog/Catalog';
 
 const router = createBrowserRouter([
   {
