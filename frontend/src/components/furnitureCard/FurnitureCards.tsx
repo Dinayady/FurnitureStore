@@ -13,15 +13,17 @@ type Props = {
 
 export const FurnitureCards = ({ title, price, img }: Props) => {
   return (
-    <Link to={Paths.furniture} className={style.cards}>
-      <img src={img} alt={title} className={style.img} />
-      <p className={style.title}>{title}</p>
+    <div className={style.cards}>
+      <Link to={Paths.furniture} className={style.link}>
+        <img src={img} alt={title} className={style.img} />
+        <p className={style.title}>{title}</p>
+      </Link>
       <div className={style.purchase}>
         <p className={style.price}>{price}$</p>
         <button className={style.btn}>
           <CartIcon className={style.icon} />
         </button>
       </div>
-    </Link>
+    </div>
   );
 };

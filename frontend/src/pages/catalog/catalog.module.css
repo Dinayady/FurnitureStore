@@ -1,0 +1,24 @@
+.catalog {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0 40px 0;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 60px;
+}

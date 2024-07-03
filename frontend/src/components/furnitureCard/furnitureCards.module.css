@@ -7,6 +7,12 @@
   padding: 20px;
 }
 
+.link {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .img {
   width: 100%;
   border-radius: 10px;
@@ -28,4 +34,8 @@
 
 .btn {
   height: 30px;
+}
+
+.icon:hover * {
+  fill: #e04c2a;
 }
