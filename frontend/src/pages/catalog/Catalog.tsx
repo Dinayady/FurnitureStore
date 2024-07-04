@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 import { mockCategory } from '../../mockData/mockCategory';
 import { mockFurniture } from '../../mockData/mockFurniture';
+import { FurnitureType } from '../../mockData/type/typeFurniture';
 
 import { Navigation } from '../../components/navigation/Navigation';
 import { BtnCategory } from '../../components/buttonCategory/BtnCategory';
@@ -9,10 +10,10 @@ import { FurnitureCards } from '../../components/furnitureCard/FurnitureCards';
 import { Footer } from '../../components/footer/Footer';
 
 import style from './catalog.module.css';
-import { FurnitureType } from '../../mockData/type/typeFurniture';
 
 export const Catalog = () => {
   const [category, setCategory] = useState<string>();
+  const [activeBtn, setActiveBtn] = useState<number>(0);
 
   const filteredFurniture = mockFurniture.reduce((acc, item) => {
     if (!category || category === 'All') {
@@ -22,6 +23,10 @@ export const Catalog = () => {
     }
     return acc;
   }, [] as FurnitureType[]);
+
+  const handleCategoryClick = (categoryId: number) => {
+    setActiveBtn(categoryId);
+  };
 
   return (
     <>
@@ -38,6 +43,8 @@ export const Catalog = () => {
                   filtered={({ category }) => {
                     setCategory(category);
                   }}
+                  isActive={props.id === activeBtn}
+                  onClick={() => handleCategoryClick(props.id)}
                 />
               ))}
             </div>
