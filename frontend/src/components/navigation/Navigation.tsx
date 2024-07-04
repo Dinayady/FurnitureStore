@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
 
-import { Paths } from '../../paths';
-import { Input } from '../input/Input';
-import MainIcon from '../../assets/icons/logo.svg?react';
-import CartIcon from '../../assets/icons/cart-nav.svg?react';
-import UserIcon from '../../assets/icons/user-icon.svg?react';
+import { Paths } from '@/paths';
+import { Input } from '@/components/input/Input';
+import MainIcon from '@/assets/icons/logo.svg?react';
+import CartIcon from '@/assets/icons/cart-nav.svg?react';
+import UserIcon from '@/assets/icons/user-icon.svg?react';
 
 import style from './navigation.module.css';
 

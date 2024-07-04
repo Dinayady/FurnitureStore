@@ -1,4 +1,4 @@
-import { FurnitureType } from './type/typeFurniture';
+import { FurnitureType } from '@/mockData/type/typeFurniture';
 
 export const mockFurniture: FurnitureType[] = [
   {

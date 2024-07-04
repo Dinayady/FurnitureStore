@@ -1,22 +1,22 @@
 import { useState } from 'react';
 
-import { mockCategory } from '../../mockData/mockCategory';
-import { mockFurniture } from '../../mockData/mockFurniture';
-import { FurnitureType } from '../../mockData/type/typeFurniture';
+import { mockFurniture } from '@/mockData/mockFurniture';
+import { FurnitureType } from '@/mockData/type/typeFurniture';
+import { mockCategory } from '@/mockData/mockCategory';
 
-import { Navigation } from '../../components/navigation/Navigation';
-import { BtnCategory } from '../../components/buttonCategory/BtnCategory';
-import { FurnitureCards } from '../../components/furnitureCard/FurnitureCards';
-import { Footer } from '../../components/footer/Footer';
+import { Navigation } from '@/components/navigation/Navigation';
+import { BtnCategory } from '@/components/buttonCategory/BtnCategory';
+import { FurnitureCards } from '@/components/furnitureCard/FurnitureCards';
+import { Footer } from '@/components/footer/Footer';
 
 import style from './catalog.module.css';
 
 export const Catalog = () => {
-  const [category, setCategory] = useState<string>();
+  const [category, setCategory] = useState<string>('All');
   const [activeBtn, setActiveBtn] = useState<number>(0);
 
   const filteredFurniture = mockFurniture.reduce((acc, item) => {
-    if (!category || category === 'All') {
+    if (category === 'All') {
       acc.push(item);
     } else if (item.category === category) {
       acc.push(item);
