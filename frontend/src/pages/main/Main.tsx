@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
 
-import { Paths } from '../../paths';
-import { Navigation } from '../../components/navigation/Navigation';
-import { Footer } from '../../components/footer/Footer';
-import { FurnitureCards } from '../../components/furnitureCard/FurnitureCards';
-import { mockFurniture } from '../../mockData/mockFurniture';
+import { Paths } from '@/paths';
+import { mockFurniture } from '@/mockData/mockFurniture';
+import { Navigation } from '@/components/navigation/Navigation';
+import { FurnitureCards } from '@/components/furnitureCard/FurnitureCards';
+import { Footer } from '@/components/footer/Footer';
 
 import style from './main.module.css';
 

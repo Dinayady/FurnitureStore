@@ -2,9 +2,9 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
 
-import { Paths } from './paths';
-import { Main } from './pages/main/Main';
-import { Catalog } from './pages/catalog/Catalog';
+import { Paths } from '@/paths';
+import { Main } from '@/pages/main/Main';
+import { Catalog } from '@/pages/catalog/Catalog';
 
 import './index.css';
 

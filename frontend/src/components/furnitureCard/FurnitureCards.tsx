@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
-import { Paths } from '../../paths';
-import CartIcon from '../../assets/icons/cart.svg?react';
+import { Paths } from '@/paths';
+import CartIcon from '@/assets/icons/cart.svg?react';
 
 import style from './furnitureCards.module.css';
 

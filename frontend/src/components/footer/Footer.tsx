@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Paths } from '../../paths';
+import { Paths } from '@/paths';
 
 import style from './footer.module.css';
 

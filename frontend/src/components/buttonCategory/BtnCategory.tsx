@@ -1,4 +1,4 @@
-import { CategoryType } from '../../mockData/type/typeCategory';
+import { CategoryType } from '@/mockData/type/typeCategory';
 
 import style from './btnCategory.module.css';
 

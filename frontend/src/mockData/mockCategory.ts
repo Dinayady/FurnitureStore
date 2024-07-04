@@ -1,4 +1,4 @@
-import { CategoryType } from './type/typeCategory';
+import { CategoryType } from '@/mockData/type/typeCategory';
 
 export const mockCategory: CategoryType[] = [
   {
