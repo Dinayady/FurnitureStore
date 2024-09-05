@@ -1,0 +1,17 @@
+.input {
+  border-radius: 20px;
+  border: 2px solid var(--main-link-color);
+  padding: 8px 20px;
+  color: var(--main-text-color);
+  font-size: 18px;
+  font-weight: 400;
+  background: #322623;
+}
+
+.input:focus {
+  border-color: var(--second-input-color);
+}
+
+.input::-webkit-input-placeholder {
+  color: var(--main-input-color);
+}

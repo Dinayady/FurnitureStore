@@ -1,0 +1,13 @@
+.button {
+  color: var(--main-link-color);
+}
+
+.button:hover {
+  color: var(--hover-link-color);
+  border-bottom: 2px solid var(--main-background-btn-color);
+}
+
+.active {
+  color: var(--hover-link-color);
+  border-bottom: 2px solid var(--main-background-btn-color);
+}

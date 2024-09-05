@@ -1,0 +1,22 @@
+.nav {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 2px solid var(--main-link-color);
+}
+
+.navigation,
+.users {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+}
+
+.logoImg {
+  display: block;
+  height: 50px;
+}
